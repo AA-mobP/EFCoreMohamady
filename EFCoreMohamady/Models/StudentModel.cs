@@ -24,5 +24,7 @@ namespace EFCoreMohamady.Models
         [ForeignKey("department")]
         public int DepartmentId { get; set; }
         public DepartmentModel department { get; set; }
+
+        public ICollection<BookModel> books { get; set; }
     }
 }
