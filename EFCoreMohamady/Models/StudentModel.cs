@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,5 +20,9 @@ namespace EFCoreMohamady.Models
         public int Age { get; set; }
 
         public GradeModel grade { get; set; }
+
+        [ForeignKey("department")]
+        public int DepartmentId { get; set; }
+        public DepartmentModel department { get; set; }
     }
 }
