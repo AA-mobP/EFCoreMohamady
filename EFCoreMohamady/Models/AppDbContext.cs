@@ -16,5 +16,6 @@ namespace EFCoreMohamady.Models
         }
 
         public DbSet<StudentModel> students { get; set; }
+        public DbSet<GradeModel> grades { get; set; }
     }
 }

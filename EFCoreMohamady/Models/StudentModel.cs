@@ -17,5 +17,7 @@ namespace EFCoreMohamady.Models
         [MaxLength(25)]
         public string Branch { get; set; }
         public int Age { get; set; }
+
+        public GradeModel grade { get; set; }
     }
 }
